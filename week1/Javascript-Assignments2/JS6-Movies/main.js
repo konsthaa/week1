@@ -14,7 +14,7 @@ if (isNaN(numMovies) || numMovies <= 0) {
   for (let i = 0; i < numMovies; i++) {
     const title = prompt(`Enter the title for movie #${i + 1}:`);
 
-    // Check if user clicked cancel or left title empty
+    // Check if user clicked cancel or left title empty...
     if (!title || title.trim() === "") {
       alert("Movie title cannot be empty. Please try again for this entry.");
       i--; // Repeat this iteration
