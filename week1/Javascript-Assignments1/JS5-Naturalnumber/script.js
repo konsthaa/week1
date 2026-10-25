@@ -1,10 +1,10 @@
-// Prompt the user for a positive integer
+// Prompt user for a positive integer
 let input = prompt("Enter a positive integer:");
 let n = parseInt(input);
 
 let outputElement = document.getElementById("output");
 
-// Check if input is a valid positive integer
+// Check that input is a valid positive integer
 if (!isNaN(n) && n > 0) {
     let sum = 0;
 
@@ -13,7 +13,7 @@ if (!isNaN(n) && n > 0) {
         sum += i;
     }
 
-    // Display the sum on the HTML document
+    // Show the sum on the HTML document
     outputElement.innerHTML = `
         <div class="result-box">
             <p><strong>Entered Number:</strong> ${n}</p>

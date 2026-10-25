@@ -1,7 +1,7 @@
-// 1. Define an empty array to store the numbers entered by the user
+// 1. Defines an empty array to store the numbers entered by the user
 const numbers = [];
 
-// 2. Use a loop (while) to prompt the user for numbers until they enter 'done' or cancel
+// 2. Uses a loop (while) to prompt the user for numbers until they enter 'done' or cancel
 while (true) {
   const input = prompt("Enter a number (or 'done' to finish):");
 
@@ -13,7 +13,7 @@ while (true) {
   // Convert input to a number
   const num = Number(input.trim());
 
-  // Validate if the input is a valid number
+  // Check that the input is a valid number
   if (!isNaN(num) && input.trim() !== "") {
     numbers.push(num);
   } else {
@@ -32,7 +32,7 @@ for (const num of numbers) {
   }
 }
 
-// 5. Display the result on the HTML document
+// 5. Shows the result on the html document
 const outputDiv = document.getElementById("output");
 
 if (evenNumbers.length > 0) {
@@ -41,5 +41,5 @@ if (evenNumbers.length > 0) {
   outputDiv.innerHTML = "<p><strong>Even Numbers:</strong> None</p>";
 }
 
-// 6. Display a message indicating the end of the program
+// 6. Show a message indicating the end of the program
 outputDiv.innerHTML += "<p><em>Program finished.</em></p>";

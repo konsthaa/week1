@@ -1,6 +1,6 @@
-// 1. Define the enhanced sortArray function
+// 1. Defines the enhanced sortArray function
 function sortArray(numbers, order) {
-  // Create a shallow copy using the spread operator to avoid mutating the original array
+  // Creates a shallow copy using the spread operator
   const sortedNumbers = [...numbers];
 
   // Sort based on the order parameter
@@ -13,7 +13,7 @@ function sortArray(numbers, order) {
   return sortedNumbers;
 }
 
-// 2. Test the function with different arrays and orders
+// 2. Test the function with different arrays/orders
 const numbers1 = [5, 2, 8, 1, 9];
 console.log("--- Test Case 1 ---");
 console.log("Original Array:", numbers1);

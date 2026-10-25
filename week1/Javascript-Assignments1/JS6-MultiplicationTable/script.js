@@ -11,19 +11,19 @@ if (!isNaN(n) && n > 0) {
     // Outer loop represents the rows (i)
     for (let i = 1; i <= n; i++) {
         tableHTML += "<tr>";
-        
+
         // Inner loop represents the columns (j)
         for (let j = 1; j <= n; j++) {
             let product = i * j;
             tableHTML += `<td>${product}</td>`;
         }
-        
+
         tableHTML += "</tr>";
     }
 
     tableHTML += "</table>";
 
-    // Display the generated table on the HTML document
+    // Show the generated table on the HTML document
     outputElement.innerHTML = `
         <h2>Multiplication Table up to ${n}</h2>
         ${tableHTML}
